@@ -1,0 +1,23 @@
+{
+  "name": "bytemancer",
+  "displayName": "Bytemancer",
+  "description": "A dark theme ported from the Bytemancer Emacs theme",
+  "version": "0.1.0",
+  "publisher": "rydermcminn",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Bytemancer",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bytemancer-color-theme.json"
+      }
+    ]
+  }
+}

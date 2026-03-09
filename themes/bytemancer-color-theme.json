@@ -435,7 +435,7 @@
         "entity.other.attribute-name"
       ],
       "settings": {
-        "foreground": "#D7A65F",
+        "foreground": "#38A89D",
         "fontStyle": "italic"
       }
     },
@@ -666,7 +666,7 @@
         "entity.name.type.enum"
       ],
       "settings": {
-        "foreground": "#7199EE",
+        "foreground": "#b0b0b0",
         "fontStyle": "italic"
       }
     },
@@ -676,7 +676,7 @@
         "variable.other.enummember"
       ],
       "settings": {
-        "foreground": "#F6955B"
+        "foreground": "#b0b0b0"
       }
     }
   ],
@@ -686,8 +686,8 @@
     "type": { "foreground": "#7199EE", "fontStyle": "italic" },
     "class": { "foreground": "#7199EE", "fontStyle": "italic" },
     "interface": { "foreground": "#7199EE", "fontStyle": "italic" },
-    "enum": { "foreground": "#7199EE", "fontStyle": "italic" },
-    "enumMember": "#F6955B",
+    "enum": { "foreground": "#b0b0b0", "fontStyle": "italic" },
+    "enumMember": "#b0b0b0",
     "function": "#95C561",
     "method": "#95C561",
     "macro": "#A485DD",

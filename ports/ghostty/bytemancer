@@ -1,0 +1,21 @@
+# Bytemancer theme -- GENERATED, do not edit
+background = #131313
+foreground = #bfc2cc
+cursor-color = #A485DD
+cursor-text = #131313
+palette = 0=#131313
+palette = 1=#EE6D85
+palette = 2=#95C561
+palette = 3=#D7A65F
+palette = 4=#7199EE
+palette = 5=#A485DD
+palette = 6=#38A89D
+palette = 7=#e0e2ea
+palette = 8=#4A5057
+palette = 9=#EE6D85
+palette = 10=#95C561
+palette = 11=#D7A65F
+palette = 12=#7199EE
+palette = 13=#A485DD
+palette = 14=#38A89D
+palette = 15=#e0e2ea

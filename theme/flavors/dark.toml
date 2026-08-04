@@ -1,0 +1,38 @@
+# Bytemancer palette — dark flavor.
+# Hex values are the source of truth, taken from the Emacs theme.
+# name -> hex; roles.toml references these names.
+
+# Layers (ordered darkest -> lightest).
+# NOTE: base/raised are neutral grey; overlay/selection are navy-tinted, so
+# backgrounds shift hue as they lighten. Centralized here if that ever changes.
+base      = "#131313"   # sidebars, panels, activity bar, terminal, solaire windows
+raised    = "#191919"   # editor background, `default` face, fringe
+overlay   = "#1A1B2A"   # hl-line, widgets, popups, input backgrounds
+selection = "#2b2d45"   # region, selection, active list item
+
+# Neutrals
+fg        = "#bfc2cc"   # default foreground
+fg_bright = "#e0e2ea"   # emphasized foreground, bright white
+fg_muted  = "#4A5057"   # comments, line numbers, disabled
+
+# Accents
+red    = "#EE6D85"
+orange = "#F6955B"
+yellow = "#D7A65F"
+green  = "#95C561"
+blue   = "#7199EE"
+cyan   = "#38A89D"
+purple = "#A485DD"
+
+# Background tints (diff / search / validation)
+red_bg     = "#5b0b19"
+red_bg2    = "#2e050d"
+yellow_bg  = "#6B5330"
+green_bg   = "#344b1b"
+green_bg2  = "#1a250e"
+blue_bg    = "#2A3A5A"
+# NOTE: dropped red_bg3/green_bg3 (unreferenced) and purple_bg (also unreferenced).
+
+# Surface-specific extras (no Emacs face equivalent)
+accent_hover = "#b89ee6"   # VS Code button hover shade
+black        = "#000000"   # VS Code shadows only

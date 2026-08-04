@@ -1,0 +1,86 @@
+# Bytemancer semantic role IR map.
+# role -> palette name (+ optional style)
+
+[opacity]
+subtle = 0.2
+muted  = 0.4
+strong = 0.6
+
+[roles]
+# --- Syntax
+"syntax.keyword"      = { color = "red" }
+"syntax.operator"     = { color = "red" }
+"syntax.string"       = { color = "yellow" }
+"syntax.doc"          = { color = "yellow", italic = true }
+"syntax.comment"      = { color = "fg_muted", italic = true }
+"syntax.function"     = { color = "green" }
+"syntax.type"         = { color = "blue", italic = true }
+"syntax.variable"     = { color = "fg" }
+"syntax.parameter"    = { color = "fg" }
+"syntax.property"     = { color = "fg" }
+"syntax.constant"     = { color = "orange" }
+"syntax.number"       = { color = "purple" }
+"syntax.builtin"      = { color = "purple" }
+"syntax.tag"          = { color = "purple" }
+"syntax.attribute"    = { color = "cyan", italic = true }
+"syntax.namespace"    = { color = "cyan" }
+"syntax.regexp"       = { color = "cyan" }
+"syntax.decorator"    = { color = "orange" }
+"syntax.escape"       = { color = "orange" }
+"syntax.enum"         = { color = "fg", italic = true }
+"syntax.enum_member"  = { color = "fg" }
+"syntax.language_var" = { color = "purple" }
+"syntax.punctuation"  = { color = "fg" }
+"syntax.invalid"      = { color = "red", bold = true }
+
+# --- UI
+"ui.bg.base"          = { color = "base" }
+"ui.bg.raised"        = { color = "raised" }
+"ui.bg.overlay"       = { color = "overlay" }
+"ui.bg.selection"     = { color = "selection" }
+"ui.fg"               = { color = "fg" }
+"ui.fg.bright"        = { color = "fg_bright" }
+"ui.fg.muted"         = { color = "fg_muted" }
+"ui.accent"           = { color = "purple" }
+"ui.cursor"           = { color = "purple" }
+"ui.link"             = { color = "cyan", underline = true }
+"ui.error"            = { color = "red" }
+"ui.warning"          = { color = "orange" }
+"ui.info"             = { color = "blue" }
+"ui.success"          = { color = "green" }
+"ui.hint"             = { color = "cyan" }
+"ui.bracket.1"        = { color = "purple" }
+"ui.bracket.2"        = { color = "cyan" }
+"ui.bracket.3"        = { color = "blue" }
+"ui.bracket.unmatched" = { color = "red" }
+"ui.line_number"      = { color = "fg_muted" }
+"ui.line_number.active" = { color = "purple" }
+"ui.search.current"   = { color = "yellow", bg = "yellow_bg", bold = true }
+"ui.search.other"     = { color = "blue", bg = "blue_bg" }
+
+# --- Diff
+"diff.added.bg"       = { color = "green_bg2" }
+"diff.added.emphasis" = { color = "green_bg" }
+"diff.added.fg"       = { color = "green" }
+"diff.removed.bg"     = { color = "red_bg2" }
+"diff.removed.emphasis" = { color = "red_bg" }
+"diff.removed.fg"     = { color = "red" }
+"diff.changed.bg"     = { color = "blue_bg" }
+"diff.changed.fg"     = { color = "blue" }
+
+# --- Git
+"git.added"           = { color = "green" }
+"git.modified"        = { color = "yellow" }
+"git.deleted"         = { color = "red" }
+"git.untracked"       = { color = "cyan" }
+"git.renamed"         = { color = "purple" }
+"git.ignored"         = { color = "fg_muted" }
+"git.conflict"        = { color = "red", bold = true }
+
+# --- Markdown
+"markdown.heading"      = { color = "purple", bold = true }
+"markdown.bold"         = { color = "orange", bold = true }
+"markdown.italic"       = { color = "red", italic = true }
+"markdown.code.inline"  = { color = "yellow" }
+"markdown.code.block"   = { color = "yellow" }
+"markdown.link"         = { color = "cyan" }

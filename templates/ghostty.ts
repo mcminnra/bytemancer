@@ -17,7 +17,7 @@ function render(ctx: BuildContext): OutputFile[] {
     "# Bytemancer theme -- GENERATED, do not edit",
     `background = ${c("ui.bg.base")}`,
     `foreground = ${c("ui.fg")}`,
-    `cursor-color = ${c("ui.cursor")}`,
+    `cursor-color = ${c("ui.fg")}`,
     `cursor-text = ${c("ui.bg.base")}`,
     ...ANSI.map((name, i) => `palette = ${i}=${p[name]}`),
     "",

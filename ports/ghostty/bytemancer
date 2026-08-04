@@ -1,7 +1,7 @@
 # Bytemancer theme -- GENERATED, do not edit
 background = #131313
 foreground = #bfc2cc
-cursor-color = #A485DD
+cursor-color = #bfc2cc
 cursor-text = #131313
 palette = 0=#131313
 palette = 1=#EE6D85

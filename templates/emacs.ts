@@ -116,6 +116,7 @@ ${letBindings}
 
    ;; Header line
    \`(header-line ((t (:background ,raised :foreground ,fg))))
+   \`(header-line-inactive ((t (:background ,raised :foreground ,fg))))
 
    ;; Minibuffer
    \`(minibuffer-prompt ((t (:foreground ,purple :weight bold))))

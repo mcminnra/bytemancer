@@ -57,6 +57,8 @@ ${letBindings}
    \`(highlight ((t (:background ,selection))))
    \`(hl-line ((t (:background ,overlay))))
    \`(fringe ((t (:background ,raised))))
+   \`(internal-border ((t (:background ,base))))
+   \`(child-frame-border ((t (:background ,base))))
    \`(match ((t (:background ,selection :foreground ,yellow))))
    \`(secondary-selection ((t (:background ,selection))))
    \`(isearch ((t (:background ,${R["ui.search.current"].bg} :foreground ,${n("ui.search.current")} :weight bold))))
@@ -102,15 +104,18 @@ ${letBindings}
    \`(solaire-default-face ((t (:background ,base :foreground ,fg))))
    \`(solaire-fringe-face ((t (:background ,base :foreground ,fg))))
    \`(solaire-line-number-face ((t (:background ,base :foreground ,fg_muted))))
-   \`(solaire-mode-line-face ((t (:background ,base :foreground ,fg))))
-   \`(solaire-mode-line-inactive-face ((t (:background ,base :foreground ,fg))))
-   \`(solaire-header-line-face ((t (:background ,base :foreground ,fg))))
+   \`(solaire-mode-line-face ((t (:background ,raised :foreground ,fg))))
+   \`(solaire-mode-line-inactive-face ((t (:background ,raised :foreground ,fg))))
+   \`(solaire-header-line-face ((t (:background ,raised :foreground ,fg))))
 
    ;; Mode line
    \`(mode-line ((t (:background ,raised :foreground ,fg :box (:line-width 1 :color ,overlay)))))
-   \`(mode-line-inactive ((t (:background ,base :foreground ,fg))))
+   \`(mode-line-inactive ((t (:background ,raised :foreground ,fg))))
    \`(mode-line-active ((t (:background ,overlay :foreground ,fg))))
    \`(mode-line-highlight ((t (:background ,purple :foreground ,raised))))
+
+   ;; Header line
+   \`(header-line ((t (:background ,raised :foreground ,fg))))
 
    ;; Minibuffer
    \`(minibuffer-prompt ((t (:foreground ,purple :weight bold))))

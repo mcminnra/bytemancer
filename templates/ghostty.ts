@@ -3,14 +3,15 @@
 
 import type { BuildContext, OutputFile, Template } from "../src/types";
 
-// ANSI slot -> palette name
+// ANSI slot -> semantic role
 const ANSI: string[] = [
-  "base", "red", "green", "yellow", "blue", "purple", "cyan", "fg_bright",
-  "fg_muted", "red", "green", "yellow", "blue", "purple", "cyan", "fg_bright",
+  "ansi.black", "ansi.red", "ansi.green", "ansi.yellow",
+  "ansi.blue", "ansi.magenta", "ansi.cyan", "ansi.white",
+  "ansi.bright.black", "ansi.bright.red", "ansi.bright.green", "ansi.bright.yellow",
+  "ansi.bright.blue", "ansi.bright.magenta", "ansi.bright.cyan", "ansi.bright.white",
 ];
 
 function render(ctx: BuildContext): OutputFile[] {
-  const p = ctx.palette;
   const c = (role: string): string => ctx.roles[role].color;
 
   const lines = [
@@ -19,7 +20,7 @@ function render(ctx: BuildContext): OutputFile[] {
     `foreground = ${c("ui.fg")}`,
     `cursor-color = ${c("ui.fg")}`,
     `cursor-text = ${c("ui.bg.base")}`,
-    ...ANSI.map((name, i) => `palette = ${i}=${p[name]}`),
+    ...ANSI.map((role, i) => `palette = ${i}=${c(role)}`),
     "",
   ];
 

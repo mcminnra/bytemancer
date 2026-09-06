@@ -58,6 +58,24 @@ strong = 0.6
 "ui.search.current"   = { color = "yellow", bg = "yellow_bg", bold = true }
 "ui.search.other"     = { color = "blue", bg = "blue_bg" }
 
+# --- ANSI
+"ansi.black"          = { color = "base" }
+"ansi.red"            = { color = "red" }
+"ansi.green"          = { color = "green" }
+"ansi.yellow"         = { color = "yellow" }
+"ansi.blue"           = { color = "blue" }
+"ansi.magenta"        = { color = "purple" }
+"ansi.cyan"           = { color = "cyan" }
+"ansi.white"          = { color = "fg" }
+"ansi.bright.black"   = { color = "fg_muted" }
+"ansi.bright.red"     = { color = "red_bright" }
+"ansi.bright.green"   = { color = "green_bright" }
+"ansi.bright.yellow"  = { color = "yellow_bright" }
+"ansi.bright.blue"    = { color = "blue_bright" }
+"ansi.bright.magenta" = { color = "purple_bright" }
+"ansi.bright.cyan"    = { color = "cyan_bright" }
+"ansi.bright.white"   = { color = "fg_bright" }
+
 # --- Diff
 "diff.added.bg"       = { color = "green_bg2" }
 "diff.added.emphasis" = { color = "green_bg" }

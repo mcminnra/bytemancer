@@ -24,14 +24,27 @@ blue   = "#7199EE"
 cyan   = "#38A89D"
 purple = "#A485DD"
 
+# ANSI bright variants
+red_bright    = "#FF90A1"
+yellow_bright = "#F2BF78"
+green_bright  = "#AEDF7B"
+blue_bright   = "#8FB3FF"
+cyan_bright   = "#56C1B6"
+purple_bright = "#BD9EF8"
+
 # Background tints (diff / search / validation)
-red_bg     = "#5b0b19"
-red_bg2    = "#2e050d"
-yellow_bg  = "#6B5330"
-green_bg   = "#344b1b"
-green_bg2  = "#1a250e"
-blue_bg    = "#2A3A5A"
-# NOTE: dropped red_bg3/green_bg3 (unreferenced) and purple_bg (also unreferenced).
+red_bg      = "#59001E"
+red_bg2     = "#190004"
+yellow_bg   = "#523500"
+yellow_bg2  = "#201200"
+green_bg    = "#2C4900"
+green_bg2   = "#0F1C00"
+blue_bg     = "#07216C"
+blue_bg2    = "#000226"
+cyan_bg     = "#002D29"
+cyan_bg2    = "#000505"
+purple_bg   = "#340E5E"
+purple_bg2  = "#0A001A"
 
 # Surface-specific extras (no Emacs face equivalent)
 accent_hover = "#b89ee6"   # VS Code button hover shade

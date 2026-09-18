@@ -138,6 +138,8 @@ function render(ctx: BuildContext): OutputFile[] {
     "editor.document_highlight.read_background": a("ui.bg.selection", "muted"),
     "editor.document_highlight.write_background": a("ui.bg.selection", "strong"),
     "editor.document_highlight.bracket_background": a("ui.accent", "subtle"),
+    "version_control.word_added": c("diff.added.emphasis"),
+    "version_control.word_deleted": c("diff.removed.emphasis"),
     "search.match_background": bg("ui.search.current"),
     "terminal.background": c("ui.bg.base"),
     "terminal.ansi.background": c("ui.bg.base"),

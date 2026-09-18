@@ -73,6 +73,8 @@
         "editor.document_highlight.read_background": "#2b2d4566",
         "editor.document_highlight.write_background": "#2b2d4599",
         "editor.document_highlight.bracket_background": "#A485DD33",
+        "version_control.word_added": "#2C4900",
+        "version_control.word_deleted": "#59001E",
         "search.match_background": "#523500",
         "terminal.background": "#131313",
         "terminal.ansi.background": "#131313",

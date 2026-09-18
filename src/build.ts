@@ -16,6 +16,7 @@ import type {
 import { vscode } from "../templates/vscode";
 import { emacs } from "../templates/emacs";
 import { ghostty } from "../templates/ghostty";
+import { zed } from "../templates/zed";
 import { PaletteSchema, RolesFileSchema } from "./schema";
 
 const root = resolve(fileURLToPath(import.meta.url), "../..");
@@ -70,7 +71,7 @@ const roles = resolveRoles(rawRoles, palette);
 const ctx: BuildContext = { palette, roles, rawRoles, opacity };
 
 // Init ports
-const templates: Template[] = [vscode, emacs, ghostty];
+const templates: Template[] = [vscode, emacs, ghostty, zed];
 const outDir = join(root, "ports");
 
 // Build ports

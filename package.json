@@ -1,7 +1,7 @@
 {
   "name": "bytemancer",
   "version": "0.1.0",
-  "description": "Single-source generator for the Bytemancer theme (VS Code, Emacs, Ghostty)",
+  "description": "Single-source generator for the Bytemancer theme",
   "private": true,
   "type": "module",
   "license": "MIT",

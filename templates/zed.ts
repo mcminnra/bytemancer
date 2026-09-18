@@ -166,7 +166,7 @@ function render(ctx: BuildContext): OutputFile[] {
   const family = {
     $schema: "https://zed.dev/schema/themes/v0.2.0.json",
     name: "Bytemancer",
-    author: "rydermcminn",
+    author: "ryder",
     themes: [{
       name: "Bytemancer",
       appearance: "dark",

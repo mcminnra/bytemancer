@@ -1,6 +1,7 @@
-# Bytemancer palette — dark flavor.
+# Bytemancer palette: base.
 # Hex values are the source of truth, taken from the Emacs theme.
-# name -> hex; roles.toml references these names.
+# token -> hex; roles.toml references these tokens.
+# Every palette defines the same tokens (see PaletteFile in src/bytemancer/load.py).
 
 # Layers (ordered darkest -> lightest).
 # NOTE: base/raised are neutral grey; overlay/selection are navy-tinted, so

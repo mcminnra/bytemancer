@@ -16,7 +16,7 @@
 ;;; Theme definition:
 (deftheme bytemancer "Theme custom tailored to mancing bytes.")
 
-;; Palette (generated from flavors/dark.toml)
+;; Palette (generated from palettes/base.toml)
 (let (
       (base "#131313")
       (raised "#191919")

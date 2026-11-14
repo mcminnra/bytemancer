@@ -7,17 +7,12 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      # Fail instead of silently re-resolving when uv.lock is out of date
+      UV_LOCKED: "1"
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-      - run: npm ci
-      - run: npm run check   # tsc — tsx doesn't type-check
-      - run: npm test
-      # Regenerate and fail if the committed output no longer matches its inputs.
-      - run: npm run build
-      - name: Fail on stale generated output
-        run: |
-          git diff --exit-code
-          test -z "$(git status --porcelain)"
+      # Installs the python and uv versions pinned in mise.toml
+      - uses: jdx/mise-action@v5
+      # lint, typecheck, test, then regenerate ports/ and fail if it is stale
+      - run: mise run ci

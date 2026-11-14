@@ -1,0 +1,44 @@
+[tools]
+python = "3.13"
+uv = "0.13.8"
+
+[env]
+# uv must use the python mise installs instead of fetching its own
+UV_PYTHON_DOWNLOADS = "never"
+
+[tasks.install]
+description = "Sync the uv environment from uv.lock"
+run = "uv sync --locked"
+
+[tasks.build]
+description = "Regenerate ports/ from theme/"
+run = "uv run python -m bytemancer.build"
+
+[tasks.preview]
+description = "Print ANSI swatches for the palette"
+run = "uv run python -m bytemancer.preview"
+
+[tasks.fmt]
+description = "Format and apply safe lint fixes"
+run = ["uv run ruff check --fix", "uv run ruff format"]
+
+[tasks.lint]
+description = "Lint, complexity limits, and format check"
+run = ["uv run ruff check", "uv run ruff format --check"]
+
+[tasks.typecheck]
+description = "Type check with ty"
+run = "uv run ty check"
+
+[tasks.test]
+description = "Run unit tests"
+run = "uv run pytest"
+
+[tasks.stale]
+description = "Fail if committed ports/ does not match the generator"
+depends = ["build"]
+run = ["git diff --exit-code", "test -z \"$(git status --porcelain)\""]
+
+[tasks.ci]
+description = "Everything CI runs"
+depends = ["lint", "typecheck", "test", "stale"]
